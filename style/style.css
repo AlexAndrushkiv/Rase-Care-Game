@@ -1,0 +1,279 @@
+
+/*======================================================*/
+ /*Стартовая страница
+/*======================================================*/
+
+body { 
+    background: url(../images/fon.jpg);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    overflow: hidden;
+}
+ 
+#info-block {    /*Таймер*/
+    height: 50px;
+    position: relative;
+}
+
+#info-block h2 {
+    position: absolute;
+    color: #f3e707;
+    margin-left: 75px;
+    top: -10px;
+}
+
+#igraPole{
+	background-image: url("../images/gamefon.png");
+	width: 890px;
+	height: 600px;
+	margin: 0 auto;
+	position: relative;	
+	border: 2px solid #0000FF;
+	overflow: hidden;	
+    background-size: cover; /* растягивает картинку на всё поле*/	
+}
+
+#start-block { 
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/start.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    
+}
+
+#start-block button { 
+    top: 150px;
+    background-image: url(../images/button.png);
+    display: block;
+    font-size: 37px;
+    border-radius: 100px;
+    border: 0;
+    transition: All 0.2s ease;
+    position: relative;
+    left: 437px;
+    color: #f74e10;
+    border: 5px solid black;
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+
+}
+
+#start-block button:hover {
+    color: green;
+}
+
+#start-block h1 {
+    top: -130px;
+    margin: 0;
+    font-size: 65px;
+    position: relative;
+    left: 80px;
+    text-align: center;
+    color: red;
+    font-family: Natural Signature;
+}
+
+#lifes {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+
+#lifes span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    background-image: url(../images/life.png);
+    background-size: cover;
+    display: block;
+}
+ 
+ /***********************
+    Игровая машинка
+ *************************/
+
+#Car{
+    width: 90px;
+    height: 150px;
+	position: absolute;
+	top: 430px;
+    left: 660px;
+    background-size: contain;
+    background-position: center;
+}
+
+/*=======================*/
+/*Стиль всречных машин*/
+/*=======================*/
+
+#VsrechniCar_1 {
+
+    background-image: url("../images/v3.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+	width: 90px;
+	height: 160px;
+	top: -150px;
+    left: 215px; 
+    position: absolute;
+}
+
+#VsrechniCar_2 {
+    background-image: url("../images/v2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+	width: 90px;
+	height: 160px;
+	top: -120px;
+    left: 425px;
+    position: absolute;
+}
+
+#VsrechniCar_3 {
+    background-image: url("../images/v1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+	width: 90px;
+	height: 160px;
+	top: -120px;
+    left: 660px;
+    position: absolute;
+}
+
+
+/*==============================*/
+/*блок с выбором машины*/
+/*==============================*/
+
+
+#car-block {
+	background-image: url("../images/choose.jpg");
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0px;
+    left: 0px;
+    background-size: cover;
+}
+
+#car_1 {
+	background-image: url("../images/car-1.png");
+	background-size: contain;
+	position: absolute;
+	background-position: center;
+	width: 120px;
+	height: 220px;
+	top: 200px;
+	left: 105px;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+#car_2 {
+	background-image: url("../images/car-2.png");
+	background-size: contain;
+	position: absolute;
+	background-position: center;
+    width: 120px;
+    height: 220px;
+	top: 200px;
+	left: 390px;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+#car_3 {
+	background-image: url("../images/car-3.png");
+	background-size: contain;
+	position: absolute;
+	background-position: center;
+    width: 120px;
+    height: 220px;
+	top: 200px;
+	left: 660px;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+#car-block h2 {
+    position: absolute;
+    color: red;
+    left: 160px;
+    top: -10px;
+    font-size: 55px;
+    font-family: Natural Signature;
+    font-weight: bold;
+}
+
+
+/*****************
+Конец игра блок
+*****************/
+
+#koniec-igra {              
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background-image: url("../images/endfon.jpg");
+    background-size: cover;
+    text-align: center;
+    font-size: 40px;
+    background-position: center;
+    font-family: "Natural Signature";
+    color: black;
+}
+
+#koniec-igra h2 {               
+    margin: 0;
+    color: #f3e707;
+    top: 90px;
+    position: relative;
+    left: 10px;
+} 
+
+#pobeda {                
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background-image: url("../images/winfon.jpg");
+    background-size: cover;
+    color: #f3e707;
+    text-align: center;
+    font-size: 40px;
+    background-position: center;
+    font-family: Natural Signature;
+    color: black;
+}
+
+#pobeda button { 
+    top: 150px;
+    background-image: url("../images/button1.png");
+    display: block;
+    font-size: 37px;
+    border-radius: 100px;
+    border: 0;
+    transition: All 0.2s ease;
+    position: relative;
+    left: 80px;
+    color: #f74e10;
+    border: 5px solid black;
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+}
+
+/*======================================================*/
+/*======================================================*/
